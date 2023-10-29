@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/degrade_background"
-    tools:context=".MainActivity"
+    tools:context=".Aplicativo"
     >
 
     <View
@@ -78,15 +78,11 @@
 
     <View
         android:id="@+id/retangulo"
-        android:layout_width="267dp"
-        android:layout_height="42dp"
-        android:layout_margin="8dp"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/view_retangulo"
         app:layout_constraintEnd_toEndOf="@+id/whiteSquare"
         app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textNome" />
+        app:layout_constraintTop_toBottomOf="@+id/textNome"
+        style="@style/retangulo" />
 
 
     <ImageView
@@ -94,21 +90,20 @@
         android:layout_height="30dp"
         android:src="@drawable/baseline_person_24"
         app:layout_constraintBottom_toBottomOf="@+id/retangulo"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNome"
+        app:layout_constraintEnd_toStartOf="@+id/edtUsuario"
         app:layout_constraintStart_toStartOf="@+id/retangulo"
         app:layout_constraintTop_toTopOf="@+id/retangulo" />
 
     <EditText
-        android:id="@+id/editTextNome"
-        style="@style/tirar_linha"
+        android:id="@+id/edtUsuario"
+        style="@style/placeholder"
         android:layout_width="182dp"
         android:layout_height="27dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:hint="username"
-        android:inputType="text"
         android:textColor="#000000"
-        android:textColorHint="#99151414"
+        android:textColorHint="#99000000"
         app:layout_constraintBottom_toBottomOf="@+id/retangulo"
         app:layout_constraintEnd_toEndOf="@+id/retangulo"
         app:layout_constraintHorizontal_bias="0.835"
@@ -118,11 +113,7 @@
 
     <View
         android:id="@+id/retanguloEmail"
-        android:layout_width="267dp"
-        android:layout_height="42dp"
-        android:layout_margin="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/view_retangulo"
+        style="@style/retangulo"
         app:layout_constraintEnd_toEndOf="@+id/whiteSquare"
         app:layout_constraintHorizontal_bias="0.356"
         app:layout_constraintStart_toStartOf="@+id/whiteSquare"
@@ -134,13 +125,13 @@
         android:layout_height="30dp"
         android:src="@drawable/baseline_email_24"
         app:layout_constraintBottom_toBottomOf="@+id/retanguloEmail"
-        app:layout_constraintEnd_toStartOf="@+id/editTextEmail"
+        app:layout_constraintEnd_toStartOf="@+id/edtEmail"
         app:layout_constraintStart_toStartOf="@+id/retanguloEmail"
         app:layout_constraintTop_toTopOf="@+id/retanguloEmail" />
 
     <EditText
-        android:id="@+id/editTextEmail"
-        style="@style/tirar_linha"
+        android:id="@+id/edtEmail"
+        style="@style/placeholder"
         android:layout_width="182dp"
         android:layout_height="27dp"
         android:hint="Email"
@@ -156,11 +147,7 @@
 
     <View
         android:id="@+id/retanguloSenha"
-        android:layout_width="267dp"
-        android:layout_height="42dp"
-        android:layout_margin="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/view_retangulo"
+        style="@style/retangulo"
         app:layout_constraintEnd_toEndOf="@+id/whiteSquare"
         app:layout_constraintHorizontal_bias="0.383"
         app:layout_constraintStart_toStartOf="@+id/whiteSquare"
@@ -171,13 +158,13 @@
         android:layout_height="30dp"
         android:src="@drawable/baseline_lock_24"
         app:layout_constraintBottom_toBottomOf="@+id/retanguloSenha"
-        app:layout_constraintEnd_toStartOf="@+id/editTextSenha"
+        app:layout_constraintEnd_toStartOf="@+id/edtSenha"
         app:layout_constraintStart_toStartOf="@+id/retanguloSenha"
         app:layout_constraintTop_toTopOf="@+id/retanguloSenha" />
 
     <EditText
-        android:id="@+id/editTextSenha"
-        style="@style/tirar_linha"
+        android:id="@+id/edtSenha"
+        style="@style/placeholder"
         android:layout_width="182dp"
         android:layout_height="27dp"
         android:hint="Senha"
@@ -191,11 +178,11 @@
         app:layout_constraintTop_toTopOf="@+id/retanguloSenha"
         app:layout_constraintVertical_bias="0.533" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCadastrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#0000FF"
+        android:layout_width="126dp"
+        android:layout_height="44dp"
+        android:background="@drawable/btn_degrade"
         android:text="Cadastrar"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/whiteSquare"
