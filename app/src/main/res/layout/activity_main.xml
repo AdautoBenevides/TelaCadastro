@@ -5,203 +5,154 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/degrade_background"
-    tools:context=".Aplicativo"
-    >
+    tools:context=".activity.MainActivity">
 
     <View
-        android:id="@+id/whiteSquare"
-        android:layout_width="340dp"
-        android:layout_height="577dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="31dp"
+        android:id="@+id/view"
+        android:layout_width="295dp"
+        android:layout_height="388dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="150dp"
         android:background="@drawable/view"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"></View>
-
-    <TextView
-        android:id="@+id/textCadastro"
-        style="@style/texto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Cadastrar"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="@+id/whiteSquare"
-        app:layout_constraintHorizontal_bias="0.141"
-        app:layout_constraintStart_toStartOf="@+id/whiteSquare"
-        app:layout_constraintTop_toTopOf="@+id/whiteSquare" />
-
-    <TextView
-        android:id="@+id/textNome"
-        style="@style/texto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Nome"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/whiteSquare"
-        app:layout_constraintHorizontal_bias="0.09"
-        app:layout_constraintStart_toStartOf="@+id/whiteSquare"
-        app:layout_constraintTop_toBottomOf="@+id/textCadastro" />
-
-    <TextView
-        android:id="@+id/textEmail"
-        style="@style/texto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Email"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/whiteSquare"
-        app:layout_constraintHorizontal_bias="0.094"
-        app:layout_constraintStart_toStartOf="@+id/whiteSquare"
-        app:layout_constraintTop_toBottomOf="@+id/retangulo" />
-
-    <TextView
-        android:id="@+id/textSenha"
-        style="@style/texto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Senha"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/whiteSquare"
-        app:layout_constraintHorizontal_bias="0.099"
-        app:layout_constraintStart_toStartOf="@+id/whiteSquare"
-        app:layout_constraintTop_toBottomOf="@+id/retanguloEmail" />
+        app:layout_constraintVertical_bias="0.492" />
 
     <View
-        android:id="@+id/retangulo"
-        app:layout_constraintEnd_toEndOf="@+id/whiteSquare"
-        app:layout_constraintHorizontal_bias="0.433"
+        android:id="@+id/circulo_icone"
+        android:layout_width="176dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/icone"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textNome"
-        style="@style/retangulo" />
-
-
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/baseline_person_24"
-        app:layout_constraintBottom_toBottomOf="@+id/retangulo"
-        app:layout_constraintEnd_toStartOf="@+id/edtUsuario"
-        app:layout_constraintStart_toStartOf="@+id/retangulo"
-        app:layout_constraintTop_toTopOf="@+id/retangulo" />
-
-    <EditText
-        android:id="@+id/edtUsuario"
-        style="@style/placeholder"
-        android:layout_width="182dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:hint="username"
-        android:textColor="#000000"
-        android:textColorHint="#99000000"
-        app:layout_constraintBottom_toBottomOf="@+id/retangulo"
-        app:layout_constraintEnd_toEndOf="@+id/retangulo"
-        app:layout_constraintHorizontal_bias="0.835"
-        app:layout_constraintStart_toStartOf="@+id/retangulo"
-        app:layout_constraintTop_toTopOf="@+id/retangulo"
-        app:layout_constraintVertical_bias="0.533" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/retanguloEmail"
+        android:id="@+id/viewUser"
         style="@style/retangulo"
-        app:layout_constraintEnd_toEndOf="@+id/whiteSquare"
-        app:layout_constraintHorizontal_bias="0.356"
-        app:layout_constraintStart_toStartOf="@+id/whiteSquare"
-        app:layout_constraintTop_toBottomOf="@+id/textEmail" />
+        android:layout_width="243dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/viewSenha" />
 
-
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/baseline_email_24"
-        app:layout_constraintBottom_toBottomOf="@+id/retanguloEmail"
-        app:layout_constraintEnd_toStartOf="@+id/edtEmail"
-        app:layout_constraintStart_toStartOf="@+id/retanguloEmail"
-        app:layout_constraintTop_toTopOf="@+id/retanguloEmail" />
+    <View
+        android:id="@+id/viewSenha"
+        style="@style/retangulo"
+        android:layout_width="243dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/circulo_icone" />
 
     <EditText
         android:id="@+id/edtEmail"
         style="@style/placeholder"
-        android:layout_width="182dp"
-        android:layout_height="27dp"
+        android:layout_width="166dp"
+        android:layout_height="38dp"
         android:hint="Email"
-        android:inputType="textEmailAddress"
+        android:paddingLeft="2dp"
         android:textColor="#000000"
         android:textColorHint="#99000000"
-        app:layout_constraintBottom_toBottomOf="@+id/retanguloEmail"
-        app:layout_constraintEnd_toEndOf="@+id/retanguloEmail"
-        app:layout_constraintHorizontal_bias="0.823"
-        app:layout_constraintStart_toStartOf="@+id/retanguloEmail"
-        app:layout_constraintTop_toTopOf="@+id/retanguloEmail"
-        app:layout_constraintVertical_bias="0.466" />
-
-    <View
-        android:id="@+id/retanguloSenha"
-        style="@style/retangulo"
-        app:layout_constraintEnd_toEndOf="@+id/whiteSquare"
-        app:layout_constraintHorizontal_bias="0.383"
-        app:layout_constraintStart_toStartOf="@+id/whiteSquare"
-        app:layout_constraintTop_toBottomOf="@+id/textSenha" />
-
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/baseline_lock_24"
-        app:layout_constraintBottom_toBottomOf="@+id/retanguloSenha"
-        app:layout_constraintEnd_toStartOf="@+id/edtSenha"
-        app:layout_constraintStart_toStartOf="@+id/retanguloSenha"
-        app:layout_constraintTop_toTopOf="@+id/retanguloSenha" />
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewSenha"
+        app:layout_constraintEnd_toEndOf="@+id/viewSenha"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/viewSenha" />
 
     <EditText
         android:id="@+id/edtSenha"
         style="@style/placeholder"
-        android:layout_width="182dp"
-        android:layout_height="27dp"
+        android:layout_width="168dp"
+        android:layout_height="37dp"
         android:hint="Senha"
         android:inputType="textPassword"
         android:textColor="#000000"
         android:textColorHint="#99000000"
-        app:layout_constraintBottom_toBottomOf="@+id/retanguloSenha"
-        app:layout_constraintEnd_toEndOf="@+id/retanguloSenha"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toStartOf="@+id/retanguloSenha"
-        app:layout_constraintTop_toTopOf="@+id/retanguloSenha"
-        app:layout_constraintVertical_bias="0.533" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnCadastrar"
-        android:layout_width="126dp"
-        android:layout_height="44dp"
-        android:background="@drawable/btn_degrade"
-        android:text="Cadastrar"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/whiteSquare"
-        app:layout_constraintEnd_toEndOf="@+id/whiteSquare"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/retanguloSenha" />
+        app:layout_constraintBottom_toBottomOf="@+id/viewUser"
+        app:layout_constraintEnd_toEndOf="@+id/viewUser"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/viewUser" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="135dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/retangulo"
-        app:layout_constraintEnd_toEndOf="@+id/whiteSquare"
-        app:layout_constraintHorizontal_bias="0.304"
-        app:layout_constraintStart_toEndOf="@+id/textCadastro"
-        app:layout_constraintTop_toTopOf="@+id/whiteSquare"
-        app:layout_constraintVertical_bias="0.648"
-        app:srcCompat="@drawable/totoro_icon" />
+        android:id="@+id/imageView2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/baseline_person_24"
+        app:layout_constraintBottom_toBottomOf="@+id/viewSenha"
+        app:layout_constraintStart_toStartOf="@+id/viewSenha"
+        app:layout_constraintTop_toTopOf="@+id/viewSenha" />
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/baseline_lock_24"
+        app:layout_constraintBottom_toBottomOf="@+id/viewUser"
+        app:layout_constraintStart_toStartOf="@+id/viewUser"
+        app:layout_constraintTop_toTopOf="@+id/viewUser"
+        app:layout_constraintVertical_bias="0.592" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Forgot Password?"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/viewUser" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="234dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/btn_degrade"
+        android:text="login"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro"
+        app:layout_constraintVertical_bias="0.729" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="116dp"
+        android:layout_height="106dp"
+        app:layout_constraintBottom_toBottomOf="@+id/circulo_icone"
+        app:layout_constraintEnd_toEndOf="@+id/circulo_icone"
+        app:layout_constraintStart_toStartOf="@+id/circulo_icone"
+        app:layout_constraintTop_toTopOf="@+id/circulo_icone"
+        app:srcCompat="@drawable/icons8_totoro_100" />
+
+    <TextView
+        android:id="@+id/cadastro"
+        android:layout_width="62dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:text="Cadastrar-se"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/viewUser" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
